@@ -10,7 +10,6 @@ function Headers() {
       <Menu />
       <Main />
       <Article/>
-      
       <Section/>
     </>
   );
