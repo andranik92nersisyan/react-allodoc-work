@@ -270,7 +270,16 @@
     justify-content: space-around;
     align-items: center;
 }
-
+.article-text h2{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.26px;
+    letter-spacing: -0.30000001192092896px;
+    text-align: left;
+    margin: 55px 0px;
+     
+}
 .article-img{
     transform: translate(1.5rem, 4.6rem);
 }
@@ -279,4 +288,15 @@
 }
 .article-list-style li::marker{
     color:  orange;
+}
+.article-list-style{
+    margin: 35px 0px;
+}
+.article-btn{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.38px;
+    color: #56CCF2;
+    padding: 10px 0px;
+
 }
