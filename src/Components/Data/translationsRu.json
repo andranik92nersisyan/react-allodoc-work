@@ -1,0 +1,32 @@
+{
+    "menu": {
+      "howToUse": "Как пользоваться?",
+      "myRecords": "Мои записи",
+      "makeAnAppointment": "Записаться к врачу"
+    },
+    "mainItem": {
+      "title": "Онлайн консультации от врачей специалистов 24/7 ",
+      "mainDescription": {
+        "firstSection": "Проконсультируйтесь",
+        "secondSection": "сейчас",
+        "thirdSection": "или по",
+        "fourthSection": "предварительной записи",
+        "sixthSection": "со своего компьютера или c помощью нашего приложения, доступного в",
+        "seventhSection": "App Store",
+        "eighthSection": " и ",
+        "ninthSection": "Google Play"
+      },
+      "btn": "Записаться",
+      "btnSecond": "Как это работает?"
+    },
+    "articleItem": {
+      "title": "Записаться к врачу",
+      "titleSpan":"Более 1500 врачей и более 50 разных специализаций",
+      "descriptionFirst": "Прием в удобное для вас время, без визита в клинику",
+      "descriptionSecond": "Врачи с опытом работы более 8 лет",
+      "descriptionThird": "Понятно объясним причину недуга и дадим подробную рекомендацию",
+      "article_btn": "Записаться"
+    }
+  }
+  
+  

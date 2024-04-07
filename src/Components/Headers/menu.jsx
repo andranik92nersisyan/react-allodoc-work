@@ -1,29 +1,32 @@
-import React from "react";
+import React, { useContext } from "react";
 import MenuLogo from "./logo";
 import MenuItem from "./menu-item";
-import translationsData from "../Data/translations.json";
-import { useState } from "react";
+import translationsRu from "../Data/translationsRu.json";
+import translationEn from "../Data/translationEn.json";
+import { TranslationContext } from "../../Page/Home/home";
 
-function Menu() {
-  const [language, setLanguage] = useState("ru");
+function Menu({ setTranslation }) {
+  const translation = useContext(TranslationContext);
+  // console.log(translation.menu);
+  // const [language, setLanguage] = useState("ru");
 
-  const changeLanguage = (lang) => {
-    setLanguage(lang);
-  };
+  // const changeLanguage = (lang) => {
+  //   setLanguage(lang);
+  // };
 
   return (
     <header className="header-blocked">
       <div className="container">
         <div className="header-ds-fl">
           <div className="translateRuEn">
-            <p onClick={() => changeLanguage("ru")}>ru</p>
-            <p onClick={() => changeLanguage("en")}>en</p>
+            <p onClick={() => setTranslation(translationsRu)}>ru</p>
+            <p onClick={() => setTranslation(translationEn)}>en</p>
             {/* {translations[language].map((item, index) => (
           <div key={index}>{item}</div>
         ))} */}
           </div>
           <MenuLogo />
-          <MenuItem menuItems={translationsData.menu} language={language} />
+          <MenuItem menuItems={translation.menu} />
         </div>
       </div>
     </header>

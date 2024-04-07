@@ -1,0 +1,30 @@
+{
+    "menu": {
+        "howToUse": "How to use?",
+        "myRecords": "My records",
+        "makeAnAppointment": "Make an appointment"
+    },
+    "mainItem": {
+        "title": "Online consultations from specialist doctors 24/7",
+        "mainDescription": {
+          "firstSection": "Consult",
+          "secondSection": "Now",
+          "thirdSection": "or by",
+          "fourthSection": "pre-registration",
+          "sixthSection": "from your computer or using our application, available in",
+          "seventhSection": "App Store",
+          "eighthSection": " and ",
+          "ninthSection": "Google Play"
+        },
+        "btn": "Sign up",
+        "btnSecond": "How it works?"
+      },
+      "articleItem": {
+        "title": "To make an appointment with a doctor",
+        "titleSpan":"More than 1,500 doctors and more than 50 different specializations",
+        "descriptionFirst": "Appointment at a time convenient for you, without a visit to the clinic",
+        "descriptionSecond": "Doctors with more than 8 years of experience",
+        "descriptionThird": "We will clearly explain the cause of the disease and give detailed recommendations.",
+        "article_btn": "Sign up"
+      }
+}

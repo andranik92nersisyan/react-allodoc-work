@@ -5,6 +5,7 @@ import user from "../../Images/user.png";
 import creditcard from "../../Images/credit-card.png";
 import help from "../../Images/help.png";
 import logout1 from "../../Images/logout.png";
+import { Link } from "react-router-dom";
 
 function MenuList() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,31 +23,31 @@ function MenuList() {
       {isOpen && (
         <div className="list">
           <ul>
-                    <li>
-                      <div className="open">
-                        <img src={user} alt="user" />
-                        <a href="#">Мой профиль</a>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="open">
-                        <img src={creditcard} alt="creditcard" />
-                        <a href="#">Пополнить баланс</a>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="open">
-                        <img src={help} alt="help" />
-                        <a href="#">FAQ</a>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="open">
-                        <img src={logout1} alt="logout1" />
-                        <a href="#">Выйти</a>
-                      </div>
-                    </li>
-                  </ul>
+            <li>
+              <div className="open">
+                <img src={user} alt="user" />
+                <a href="#">Мой профиль</a>
+              </div>
+            </li>
+            <li>
+              <div className="open">
+                <img src={creditcard} alt="creditcard" />
+                <Link to="/balance">Пополнить баланс</Link>
+              </div>
+            </li>
+            <li>
+              <div className="open">
+                <img src={help} alt="help" />
+                <a href="#">FAQ</a>
+              </div>
+            </li>
+            <li>
+              <div className="open">
+                <img src={logout1} alt="logout1" />
+                <a href="#">Выйти</a>
+              </div>
+            </li>
+          </ul>
         </div>
       )}
     </div>

@@ -4,13 +4,13 @@ import Main from "../Main/main";
 import Article from "../Article/aricle";
 import Section from "../Sections/section";
 
-function Headers() {
+function Headers({ setTranslation }) {
   return (
     <>
-      <Menu />
-      <Main />
-      <Article/>
-      <Section/>
+      <Menu setTranslation={setTranslation} />
+      <Main setTranslationMain={setTranslation}/>
+      <Article setTranslationArticle={setTranslation}/>
+      <Section />
     </>
   );
 }

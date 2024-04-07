@@ -1,21 +1,25 @@
+import { useContext } from "react";
 import "../Headers/header.css";
-function Signup(){
-    return(
-        <>
-          <div className="article-text">
-              <h2>Записаться к врачу</h2>
-              <span>Более 1500 врачей и более 50 разных специализаций</span>
-              <ul className="article-list-style">
-                <li>Прием в удобное для вас время, без визита в клинику</li>
-                <li>Врачи с опытом работы более 8 лет</li>
-                <li>
-                  Понятно объясним причину недуга и дадим подробную рекомендацию
-                </li>
-              </ul>
-              <a href="#" className="article-btn">Записаться</a>
-            </div>
-        </>
-    )
+import { TranslationContext } from "../../Page/Home/home";
+
+function Signup() {
+  const translate = useContext(TranslationContext);
+  return (
+    <>
+      <div className="article-text">
+        <h2>{translate.articleItem.title}</h2>
+        <span>{translate.articleItem.titleSpan}</span>
+        <ul className="article-list-style">
+          <li>{translate.articleItem.descriptionFirst}</li>
+          <li>{translate.articleItem.descriptionSecond}</li>
+          <li>{translate.articleItem.descriptionThird}</li>
+        </ul>
+        <a href="#" className="article-btn">
+          {translate.articleItem.article_btn}
+        </a>
+      </div>
+    </>
+  );
 }
 
 export default Signup;

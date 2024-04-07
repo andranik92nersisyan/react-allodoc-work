@@ -6,7 +6,7 @@
     list-style: none;
     border: 0;
     outline: 0;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     font-family: 'Nunito', sans-serif;
 }
 
