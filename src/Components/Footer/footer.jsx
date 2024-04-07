@@ -1,4 +1,5 @@
 import React from "react";
+import "../Headers/header.css";
 import appStoreBadge from "../../Images/appStoreBadge.png";
 import facebook from "../../Images/facebook.png";
 import footerLgo from "../../Images/footerLgo.png";
@@ -14,10 +15,12 @@ export default function Footer() {
     <footer>
       <div className="footer">
         <div className="container">
+          <div className="footer_fl">
+          
+          <div className="footer_link"> 
           <div className="footer-logo">
             <img src={footerLgo} alt="footer-logo" />
           </div>
-          <div className="footer_link"> 
             <p>
               Онлай- консульации специалистов врачей, то что предлагает данный сервис.
               <br />В нашем веб и мобильном приложении вы найдете врачей экспертов,
@@ -92,6 +95,7 @@ export default function Footer() {
               </div>
             </li>
           </ul>
+          </div>
           </div>
         </div>
       </div>

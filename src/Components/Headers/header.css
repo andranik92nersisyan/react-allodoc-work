@@ -300,3 +300,14 @@
     padding: 10px 0px;
 
 }
+
+/* footer */
+.footer{
+    background-color: #4F4F4F;
+}
+.footer_fl{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0rem;
+}
