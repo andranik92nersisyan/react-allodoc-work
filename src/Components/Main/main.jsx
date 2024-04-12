@@ -1,34 +1,30 @@
 import "../Headers/header.css";
 import mainimages from "../../Images/docimg.PNG";
-import { TranslationContext } from "../../Page/Home/home";
+import { TranslationContext } from "../../App";
 import { useContext } from "react";
 
-function Main() {
-  const translation = useContext(TranslationContext);
+function Main({setTranslationMain}) {
+  const t = useContext(TranslationContext);
 
   return (
     <main>
       <div className="container">
         <div className="mainBlock">
           <div className="mainBlock_one">
-            <h2 className="mainBlock_one_title">
-              {translation.mainItem.title}
-            </h2>
+            <h2 className="mainBlock_one_title">{t.mainItem.title}</h2>
             <p className="mainBlock_one_text">
-              {translation.mainItem.mainDescription.firstSection}{" "}
-              <b>{translation.mainItem.mainDescription.secondSection}</b>{" "}
-              {translation.mainItem.mainDescription.thirdSection}
-              <b> {translation.mainItem.mainDescription.fourthSection}</b>
-              {translation.mainItem.mainDescription.sixthSection}
-              <cite>
-                {translation.mainItem.mainDescription.seventhSection}
-              </cite>{" "}
-              {translation.mainItem.mainDescription.eighthSection}
-              <cite>{translation.mainItem.mainDescription.ninthSection}</cite>
+              {t.mainItem.mainDescription.firstSection}{" "}
+              <b>{t.mainItem.mainDescription.secondSection}</b>{" "}
+              {t.mainItem.mainDescription.thirdSection}
+              <b> {t.mainItem.mainDescription.fourthSection}</b>
+              {t.mainItem.mainDescription.sixthSection}
+              <cite>{t.mainItem.mainDescription.seventhSection}</cite>{" "}
+              {t.mainItem.mainDescription.eighthSection}
+              <cite>{t.mainItem.mainDescription.ninthSection}</cite>
             </p>
             <div className="btn_main">
-              <button className="btn_1">{translation.mainItem.btn}</button>
-              <button className="btn_2">{translation.mainItem.btnSecond}?</button>
+              <button className="btn_1">{t.mainItem.btn}</button>
+              <button className="btn_2">{t.mainItem.btnSecond}?</button>
             </div>
           </div>
           <div className="mainblock_two">

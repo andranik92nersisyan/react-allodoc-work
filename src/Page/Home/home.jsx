@@ -1,19 +1,18 @@
-import React, { useState, createContext } from "react";
-import Footer from "../../Components/Footer/footer";
-import Headers from "../../Components/Headers/header";
-import translationRu from "../../Components/Data/translationsRu.json";
+import React, {  useContext } from "react";
+import Main from "../../Components/Main/main";
+import Article from "../../Components/Article/aricle";
+import Section from "../../Components/Sections/section";
+import { TranslationContext } from "../../App";
 // import { Link } from "react-router-dom";
-export const TranslationContext = createContext();
 
 function Home() {
-  const [translation, setTranslation] = useState(translationRu);
+  const t = useContext(TranslationContext);
 
   return (
     <div className="wrapper">
-      <TranslationContext.Provider value={translation}>
-        <Headers setTranslation={setTranslation} />
-        <Footer />
-      </TranslationContext.Provider>
+      <Main setTranslationMain={t.setTranslation}/>
+      <Article setTranslationArticle={t.setTranslation}/>
+      <Section />
     </div>
   );
 }

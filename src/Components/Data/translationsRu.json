@@ -26,7 +26,131 @@
       "descriptionSecond": "Врачи с опытом работы более 8 лет",
       "descriptionThird": "Понятно объясним причину недуга и дадим подробную рекомендацию",
       "article_btn": "Записаться"
-    }
+    },
+    "filterButtons": {
+
+    },
+    "users": [
+      {
+        "id": 1,
+        "name": "Ольга Никитина",
+        "userImg": "../../Images/user_img.png",
+        "profession": "Педиатр",
+        "seniorityCount": 2,
+        "seniority": "Стаж 2 лет",
+        "date": "03 Марта 2021 ",
+        "time": "16:00",
+        "contacts": ["Видео связь", "Чат"],
+        "state": ["Запланировано", "Состоялась"]
+      },
+      {
+        "id": 2,
+        "name": "Ольга Никитина",
+        "userImg": "../../Images/user_img.png",
+        "profession": "Педиатр",
+        "seniorityCount": 3,
+        "seniority": "Стаж 3 лет",
+        "date": "03 Марта 2021 ",
+        "time": "16:00",
+        "contacts": ["Видео связь", "Чат"],
+        "state": ["Запланировано", "Состоялась"]
+      },
+      {
+        "id": 3,
+        "name": "Ольга Никитина",
+        "userImg": "../../Images/user_img.png",
+        "profession": "Педиатр",
+        "seniorityCount": 15,
+        "seniority": "Стаж 15 лет",
+        "date": "03 Марта 2021 ",
+        "time": "16:00",
+        "contacts": ["Видео связь", "Чат"],
+        "state": ["Запланировано", "Состоялась"]
+      },
+      {
+        "id": 4,
+        "name": "Ольга Никитина",
+        "userImg": "../../Images/user_img.png",
+        "profession": "Педиатр",
+        "seniorityCount": 1,
+        "seniority": "Стаж 1 лет",
+        "date": "03 Марта 2021 ",
+        "time": "16:00",
+        "contacts": ["Видео связь", "Чат"],
+        "state": ["Запланировано", "Состоялась"]
+      },
+      {
+        "id": 5,
+        "name": "Ольга Никитина",
+        "userImg": "../../Images/user_img.png",
+        "profession": "Педиатр",
+        "seniorityCount": 15,
+        "seniority": "Стаж 15 лет",
+        "date": "03 Марта 2021 ",
+        "time": "16:00",
+        "contacts": ["Видео связь", "Чат"],
+        "state": ["Запланировано", "Состоялась"]
+      },
+      {
+        "id": 6,
+        "name": "Ольга Никитина",
+        "userImg": "../../Images/user_img.png",
+        "profession": "Педиатр",
+        "seniorityCount": 7,
+        "seniority": "Стаж 7 лет",
+        "date": "03 Марта 2021 ",
+        "time": "16:00",
+        "contacts": ["Видео связь", "Чат"],
+        "state": ["Запланировано", "Состоялась"]
+      },
+      {
+        "id": 7,
+        "name": "Ольга Никитина",
+        "userImg": "../../Images/user_img.png",
+        "profession": "Педиатр",
+        "seniorityCount": 5,
+        "seniority": "Стаж 5 лет",
+        "date": "03 Марта 2021 ",
+        "time": "16:00",
+        "contacts": ["Видео связь", "Чат"],
+        "state": ["Запланировано", "Состоялась"]
+      },
+      {
+        "id": 8,
+        "name": "Ольга Никитина",
+        "userImg": "../../Images/user_img.png",
+        "profession": "Педиатр",
+        "seniorityCount": 9,
+        "seniority": "Стаж 9 лет",
+        "date": "03 Марта 2021 ",
+        "time": "16:00",
+        "contacts": ["Видео связь", "Чат"],
+        "state": ["Запланировано", "Состоялась"]
+      },
+      {
+        "id": 9,
+        "name": "Ольга Никитина",
+        "userImg": "../../Images/user_img.png",
+        "profession": "Педиатр",
+        "seniorityCount": 10,
+        "seniority": "Стаж 10 лет",
+        "date": "03 Марта 2021 ",
+        "time": "16:00",
+        "contacts": ["Видео связь", "Чат"],
+        "state": ["Запланировано", "Состоялась"]
+      },
+      {
+        "id": 10,
+        "name": "Ольга Никитина",
+        "profession": "Педиатр",
+        "seniorityCount": 8,
+        "seniority": "Стаж 8 лет",
+        "date": "03 Марта 2021 ",
+        "time": "16:00",
+        "contacts": ["Видео связь", "Чат"],
+        "state": ["Запланировано", "Состоялась"]
+      }
+    ]
   }
   
   
