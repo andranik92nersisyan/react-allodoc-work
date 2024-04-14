@@ -14,8 +14,7 @@ function App() {
   
   return (
     <div className="App">
-      <BrowserRouter>
-        <TranslationContext.Provider value={translation}>
+        <TranslationContext.Provider value={translation.translation}>
           <Menu setTranslation={setTranslation} />
           <Routes>
             <Route path="/" element={<Home />} />
@@ -25,7 +24,6 @@ function App() {
           </Routes>
           <Footer />
         </TranslationContext.Provider>
-      </BrowserRouter>
     </div>
   );
 }

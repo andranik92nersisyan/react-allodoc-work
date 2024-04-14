@@ -2,7 +2,7 @@ import { useContext } from "react";
 import "../Headers/header.css";
 import { TranslationContext } from "../../App";
 
-function Signup({setTranslation}) {
+function Signup({}) {
   const t = useContext(TranslationContext);
   return (
     <>

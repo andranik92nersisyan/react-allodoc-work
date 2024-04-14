@@ -4,14 +4,16 @@ import Article from "../../Components/Article/aricle";
 import Section from "../../Components/Sections/section";
 import { TranslationContext } from "../../App";
 // import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
 
 function Home() {
-  const t = useContext(TranslationContext);
+  const { t } = useTranslation()
 
   return (
     <div className="wrapper">
-      <Main setTranslationMain={t.setTranslation}/>
-      <Article setTranslationArticle={t.setTranslation}/>
+      <Main setTranslationMain={t}/>
+      <Article setTranslationArticle={t}/>
       <Section />
     </div>
   );

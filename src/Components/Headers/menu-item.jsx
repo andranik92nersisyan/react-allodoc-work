@@ -1,34 +1,33 @@
 import "./header.css";
 // import MenuList from "./menu-list";
 import notifications from "../../Images/notifications.png";
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import vector from "../../Images/vector.png";
 import user from "../../Images/user.png";
 import creditcard from "../../Images/credit-card.png";
 import help from "../../Images/help.png";
 import logout1 from "../../Images/logout.png";
 import { Link } from "react-router-dom";
+import { TranslationContext } from "../../App";
+import { useTranslation } from "react-i18next";
 
-const MenuItem = ({ menuItems }) => {
+const MenuItem = () => {
   const [isOpen, setIsOpen] = useState(false);
+  // const t = useContext(TranslationContext);
+  const {t} = useTranslation()
 
   return (
     <div className="menu-item-fl">
       <nav className="navbar">
         <ul>
-          {/* {translation.map((item, index) => (
-            <li key={index}>
-              <a href="#">{item[language]}</a>
-            </li>
-          ))} */}
           <li>
-            <a href="#">{menuItems.howToUse}</a>
+            <a href="#">{t("howToUse")}</a>
           </li>
           <li>
-            <a href="#">{menuItems.myRecords}</a>
+            <a href="#">{t("myRecords")}</a>
           </li>
           <li>
-            <a href="#">{menuItems.makeAnAppointment}</a>
+            <a href="#">{t("makeAnAppointment")}</a>
           </li>
         </ul>
         <div className="user_icon">
@@ -40,7 +39,7 @@ const MenuItem = ({ menuItems }) => {
       </nav>
       <div className="menu-list">
         <p className="list-name">
-          <a href="#">Артем Свиридов </a>
+          <a href="#">{t("menuName")}</a>
         </p>
         <div className="menu_btn">
           <button onClick={() => setIsOpen((prevIsOpen) => !prevIsOpen)}>
@@ -54,25 +53,25 @@ const MenuItem = ({ menuItems }) => {
               <li>
                 <div className="open">
                   <img src={user} alt="user" />
-                  <a href="#">Мой профиль</a>
+                  <a href="#">{t("myProfile")}</a>
                 </div>
               </li>
               <li>
                 <div className="open">
                   <img src={creditcard} alt="creditcard" />
-                  <Link to="/balance">Пополнить баланс</Link>
+                  <Link to="/balance">{t("topUpBalance")}</Link>
                 </div>
               </li>
               <li>
                 <div className="open">
                   <img src={help} alt="help" />
-                  <a href="#">FAQ</a>
+                  <a href="#">{t("faq")}</a>
                 </div>
               </li>
               <li>
                 <div className="open">
                   <img src={logout1} alt="logout1" />
-                  <a href="#">Выйти</a>
+                  <a href="#">{t("exit")}</a>
                 </div>
               </li>
             </ul>
