@@ -5,25 +5,24 @@ import Home from "./Page/Home/home";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Footer from "./Components/Footer/footer";
 import Menu from "./Components/Headers/menu";
-import translationRu from "./Components/Data/translationsRu.json";
+// import translationRu from "./Components/Data/translationsRu.json";
+// import translationEn from "./Components/Data/translationsEn.json";
 import UserInfo from "./Page/Contact/user_info";
 export const TranslationContext = createContext();
 
 function App() {
-  const [translation, setTranslation] = useState(translationRu);
-  
+  // const [translation, setTranslation] = useState(translationRu.ru);
+
   return (
     <div className="App">
-        <TranslationContext.Provider value={translation.translation}>
-          <Menu setTranslation={setTranslation} />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/balance" element={<Balance />} />
-            <Route path="/user/:id" element={<UserInfo />}/>
-          </Routes>
-          <Footer />
-        </TranslationContext.Provider>
+      <Menu />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/balance" element={<Balance />} />
+        <Route path="/user/:id" element={<UserInfo />} />
+      </Routes>
+      <Footer />
     </div>
   );
 }

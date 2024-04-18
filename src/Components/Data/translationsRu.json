@@ -45,6 +45,7 @@
     "users": [
     {
         "id": 1,
+        "status": "active",
         "name": "Ольга Никитина",
         "userImg": "doc1.png",
         "profession": "Педиатр",
@@ -57,6 +58,7 @@
       },
       { 
         "id": 2,
+        "status": "active",
         "name": "Олимпия Герман",
         "userImg": "doc2.png",
         "profession": "Пневмолог",
@@ -69,6 +71,7 @@
       },
       {
         "id": 3,
+        "status": "active",
         "name": "Надежда Коробчан",
         "userImg": "doc3.jpg",
         "profession": "Онколог",
@@ -81,6 +84,7 @@
       },
       {
         "id": 4,
+        "status": "active",
         "name": "Андриан Кириак",
         "userImg": "doc4.jpg",
         "profession": "Эндокринолог",
@@ -93,6 +97,7 @@
       },
       {
         "id": 5,
+        "status": "normal",
         "name": "Наталья Кодрян",
         "userImg": "doc5.png",
         "profession": "Онколог",
@@ -105,6 +110,7 @@
       },
       {
         "id": 6,
+        "status": "normal",
         "name": "Зинаида Сарбу",
         "userImg": "doc6.png",
         "profession": "Акушер-гинеколог",
@@ -117,6 +123,7 @@
       },
       {
         "id": 7,
+        "status": "normal",
         "name": "Ирина Трибой",
         "userImg": "doc7.png",
         "profession": "Педиатр",
@@ -129,6 +136,7 @@
       },
       {
         "id": 8,
+        "status": "normal",
         "name": "Анжела Селиванов",
         "userImg": "doc8.png",
         "profession": "Педиатр",
@@ -141,6 +149,7 @@
       },
       {
         "id": 9,
+        "status": "unavailable ",
         "name": "Людмила Сурацель",
         "userImg": "doc9.png",
         "profession": "Педиатр",
@@ -153,6 +162,7 @@
       },
       {
         "id": 10,
+        "status": "unavailable ",
         "name": "Елена Васильева",
         "userImg": "doc10.png",
         "profession": "Педиатр",

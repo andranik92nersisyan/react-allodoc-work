@@ -1,52 +1,54 @@
-import React, { useContext, useEffect, useState  } from "react";
-import Sectiondoctrs from "./sectionblock";
-import { TranslationContext } from "../../App";
+// Section.js
+import React, { useEffect, useState } from "react";
+import SectionDoctrs from "./sectionblock";
 import "./section.css";
+import { useTranslation } from "react-i18next";
+import publicAPI from "../../Service/Api/publicAPI.js";
+
 function Section() {
-  const { users } = useContext(TranslationContext);
-  const [usersState, setUsersState] = useState(users);
-  const t = useContext(TranslationContext);
+  const { t } = useTranslation();
+  const [id, setId] = useState(1);
+  const [section, setSection] = useState([]);
+
+  useEffect(() => {
+    publicAPI
+      .get(`/?page=1&category=${id}`)
+      .then((res) => {
+        console.log(res.data.results);
+        setSection(res.data.results);
+      })
+      .catch((err) => {
+        console.log("Errors Doctors Block::not found`", err);
+      });
+  }, [id]);
 
   return (
     <section>
       <div className="container">
         <div className="section_doctor_block">
           <div className="btn">
-            <button className="section_btn_one">{t.records.myNotes}</button>
-            <div className="btn-link"  style={{ marginTop: '5rem' }}>
+            <button className="section_btn_one">{t("records.myNotes")}</button>
+            <div className="btn-link" style={{ marginTop: "5rem" }}>
               <button
-                className="section_btn_onclick"
-                onClick={() =>
-                  setUsersState(() =>
-                    users.filter((user) => user.seniorityCount < 5)
-                  )
-                }
-              >
-                {t.records.upcoming}
+                onClick={() => setId(1)}
+                className={id === 1 ? "active" : ""}>
+                {t("records.upcoming")}
               </button>
               <button
-                className="section_btn_onclick"
-                onClick={() =>
-                  setUsersState(() =>
-                    users.filter((user) => user.seniorityCount > 5)
-                  )
-                }
-              >
-                {t.records.past}
+                // className="section_btn_onclick"
+                onClick={() => setId(2)}
+                className={id === 2 ? "active" : ""}>
+                {t("records.past")}
               </button>
               <button
-                className="section_btn_onclick"
-                onClick={() =>
-                  setUsersState(() =>
-                    users.filter((user) => user.seniorityCount <= 0)
-                  )
-                }
-              >
-                {t.records.canceled}
+                // className="section_btn_onclick"
+                onClick={() => setId(4)}
+                className={id === 4 ? "active" : ""}>
+                {t("records.canceled")}
               </button>
             </div>
           </div>
-          <Sectiondoctrs users={usersState} />
+          <SectionDoctrs section={section} />
         </div>
       </div>
     </section>

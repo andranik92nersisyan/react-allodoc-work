@@ -45,6 +45,7 @@
     "users": [
       {
           "id": 1,
+          "status": "active",
           "name": "Olga Nikitina",
           "userImg": "doc1.png",
           "profession": "Pediatrician",
@@ -57,6 +58,7 @@
         },
         { 
           "id": 2,
+          "status": "active",
           "name": "Olimpia Gherman",
           "userImg": "doc2.png",
           "profession": "Pneumologist",
@@ -69,6 +71,7 @@
         },
         {
           "id": 3,
+          "status": "active",
           "name": "Надежда Коробчан",
           "userImg": "doc3.jpg",
           "profession": "Oncologist",
@@ -81,6 +84,7 @@
         },
         {
           "id": 4,
+          "status": "active",
           "name": "Andrian Chiriac",
           "userImg": "doc4.jpg",
           "profession": "Endocrinologist",
@@ -93,6 +97,7 @@
         },
         {
           "id": 5,
+          "status": "normal",
           "name": "Natalia Codrean",
           "userImg": "doc5.png",
           "profession": "Oncologist",
@@ -105,6 +110,7 @@
         },
         {
           "id": 6,
+          "status": "normal",
           "name": "Zinaida Sarbu",
           "userImg": "doc6.png",
           "profession": "Obstetrician-gynecologist",
@@ -117,6 +123,7 @@
         },
         {
           "id": 7,
+          "status": "normal",
           "name": "Irina Triboi",
           "userImg": "doc7.png",
           "profession": "Oncologist",
@@ -129,6 +136,7 @@
         },
         {
           "id": 8,
+          "status": "normal",
           "name": "Angela Selivanov",
           "userImg": "doc8.png",
           "profession": "Obstetrician-gynecologist",
@@ -141,6 +149,7 @@
         },
         {
           "id": 9,
+          "status": "unavailable ",
           "name": "Lyudmila Suratsel",
           "userImg": "doc9.png",
           "profession": "Endocrinologist",
@@ -153,6 +162,7 @@
         },
         {
           "id": 10,
+          "status": "unavailable ",
           "name": "Elena Vasilieva",
           "userImg": "doc10.png",
           "profession": "Pneumologist",

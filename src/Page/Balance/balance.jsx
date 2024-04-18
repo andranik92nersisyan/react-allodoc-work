@@ -1,11 +1,8 @@
-import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 import "../../Components/Headers/header.css";
 function Balance() {
-  useEffect(() => {
-    console.log("hellllooo");
-  }, []);
+
 
   return (
     <div className="mainDiv">
@@ -23,7 +20,7 @@ function Balance() {
             <span className="balance_data">За все время</span>
           </div>
           <div className="balance_table">
-            <img href="#"/>
+            {/* <img href="#"/> */}
             <span className="balance_praice">10.03.2021</span>
             <span className="balance_praice">Пополнение</span>
             <span className="balance_praice">+ 560,00</span>
