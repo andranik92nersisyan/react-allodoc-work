@@ -9,7 +9,6 @@ import Doctors from "./doctrs";
 
 function SectionDoctrs(props) {
   const { t } = useTranslation();
-console.log(props.section);
   const renderUsers = useMemo(() => {
     return props.section.map((item, index) => {
       return (
@@ -20,12 +19,12 @@ console.log(props.section);
                 <img src={calendar} alt="calendar" />
                 <span className="call">{item.date_of_birth}</span>
                 <img src={clock} alt="clock" />
-                <span className="call">{item.near_date}</span>
-                <img className="data_img_camera" src={videocamera}/>
-                  <span className="call">{t("users.contacts")}</span>
+                <span className="call">{t("users.time")}</span>
+                <img className="data_img_camera" src={videocamera} />
+                <span className="call"> {t("users.contacts.chat_one")} </span>
               </div>
             </div>
-            <Doctors item={item}/>
+            <Doctors item={item} />
           </div>
         </div>
       );

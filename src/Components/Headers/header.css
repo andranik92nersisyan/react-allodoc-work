@@ -201,14 +201,24 @@
     padding: 10rem 0rem;
 }
 
-.mainBlock_one_title {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 43.88px;
-    text-align: left;
-    padding: 3rem 0rem;
-}
 
+.mainBlock_one_title {
+    position: relative;
+    width: 340px;
+    margin: 19px 0px;
+  }
+  
+  .mainBlock_one_title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 28px;
+    width: 75%;
+    height: 8px;
+    background-color: #FFB860;
+    z-index: -20;
+  }
+  
 .mainBlock_one_text{
     font-size: 17px;
     font-weight: 400;

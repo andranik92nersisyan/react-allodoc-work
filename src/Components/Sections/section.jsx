@@ -14,11 +14,10 @@ function Section() {
     publicAPI
       .get(`/?page=1&category=${id}`)
       .then((res) => {
-        console.log(res.data.results);
         setSection(res.data.results);
       })
       .catch((err) => {
-        console.log("Errors Doctors Block::not found`", err);
+        alert("Errors․․․․it's wrong, please repeat it one more time", err);
       });
   }, [id]);
 

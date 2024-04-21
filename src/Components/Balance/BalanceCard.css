@@ -1,0 +1,73 @@
+.balance_naw{
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 0px;
+}
+.balance_title h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.26px;
+    color: #4F4F4F;
+}
+.balance_btn{
+    margin: 0px 45px;
+    width: 355px;
+    height: 40px;
+    border-radius: 10px;
+    opacity: 0px;
+    background: #56CCF2;
+    cursor: pointer;
+}
+
+.balance_p{
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 43.88px;
+    color: #219653;
+}
+.balance_history{
+    margin: 35px 0px;
+}
+.balance_status{
+    margin-top: 15px;
+    margin-left: 5px;
+}
+.balance_data{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17.07px;
+    color: #A0A0A0;
+    margin: 0px 15px;
+    cursor: pointer;
+    background-color: white;
+}
+.balance_table{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.balance_data_wrap {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        gap: 10%;
+        align-items: baseline;
+        width: 1145px;
+        height: 68px;
+        top: 424px;
+        left: 381px;
+        opacity: 0px;
+        border-radius: 10px;
+        opacity: 0px;
+        background: #F6F8FB;
+        margin: 10px 0px;
+}
+.img_data{
+    width: 39px;
+    height: 39px;
+    margin: auto 0px;
+}
+.balance_price{
+    text-align: center;
+    margin: auto 0px;
+}

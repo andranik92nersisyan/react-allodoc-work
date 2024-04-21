@@ -1,6 +1,6 @@
 import "./header.css";
 import notifications from "../../Images/notifications.png";
-import React, { useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import vector from "../../Images/vector.png";
 import user from "../../Images/user.png";
 import creditcard from "../../Images/credit-card.png";
@@ -11,7 +11,23 @@ import { useTranslation } from "react-i18next";
 
 const MenuItem = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const {t} = useTranslation()
+  const { t } = useTranslation();
+
+  useEffect(() => {
+    document.onclick = (event) => { 
+      if (isOpen){
+        setIsOpen(false);
+      }
+    }
+  },[isOpen])
+  const clickEvent = useCallback((event) => {
+    event.stopPropagation();
+    if (isOpen  === false){
+      setIsOpen(true);
+    }else {
+      setIsOpen(false);
+    }
+  }, [isOpen])
 
   return (
     <div className="menu-item-fl">
@@ -39,8 +55,7 @@ const MenuItem = () => {
           <a href="#">{t("menu.menuName")}</a>
         </p>
         <div className="menu_btn">
-          <button onClick={() => setIsOpen((prevIsOpen) => !prevIsOpen)}>
-            {isOpen}
+          <button onClick={clickEvent}>
             <img className="menu_btn_icon" src={vector} alt="vector" />
           </button>
         </div>

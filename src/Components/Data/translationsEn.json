@@ -42,138 +42,76 @@
       "past": "Past",
       "canceled": "Canceled"
     },
-    "users": [
-      {
-          "id": 1,
+    "users": {
           "status": "active",
           "name": "Olga Nikitina",
           "userImg": "doc1.png",
           "profession": "Pediatrician",
           "seniorityCount": 2,
-          "seniority": "2 years experience",
+          "seniority": " years experience",
           "date": "03 March 2021 ",
           "time": "16:00",
           "contacts": ["Video communication", "Chat"],
           "state": ["Planned", "Held"]
         },
-        { 
-          "id": 2,
-          "status": "active",
-          "name": "Olimpia Gherman",
-          "userImg": "doc2.png",
-          "profession": "Pneumologist",
-          "seniorityCount": 3,
-          "seniority": "20 years of experience",
-          "date": "Wednesday 17 April",
-          "time": "12:00",
-          "contacts": ["Video communication", "Chat"],
-          "state": ["Planned", "Held"]
+        "balanceTitles": "zdczdc",
+        "balancePraices": "1 058,68",
+        "balanceButtons": "zdczcdcz счет",
+         "balancTitles": "Исторzczczdczcия платежей",
+         "balancData1": "zvzdvdzня",
+         "balancData2": "За месяц",
+         "balancData3": "За все время",
+
+      "balancePraice": [
+        {
+          "id": 1,
+          "status": "За сегодня",
+          "img": "visa.png",
+          "time": "10.03.2021",
+          "title": "jhgf",
+          "price": "+ 560,00"
+        },
+        {
+        "id": 2,
+        "status": "За месяц",
+        "img": "Mask1.png",
+        "time": "10.03.2021",
+        "title": "dwdsaddssd",
+        "price": "- 900,00"
         },
         {
           "id": 3,
-          "status": "active",
-          "name": "Надежда Коробчан",
-          "userImg": "doc3.jpg",
-          "profession": "Oncologist",
-          "seniorityCount": 15,
-          "seniority": "20 years of experience",
-          "date": "Saturday 20 April",
-          "time": "14:00",
-          "contacts": ["Video communication", "Chat"],
-          "state": ["Planned", "Held"]
+          "status": "За сегодня",
+          "img": "Mask2.png",
+          "time": "10.03.2021",
+          "title": "Оплата за консультацию",
+          "price": "- 900,00"
         },
         {
           "id": 4,
-          "status": "active",
-          "name": "Andrian Chiriac",
-          "userImg": "doc4.jpg",
-          "profession": "Endocrinologist",
-          "seniorityCount": 0,
-          "seniority": "19 years of experience",
-          "date": "Tuesday 16 April",
-          "time": "13:00",
-          "contacts": ["Video communication", "Chat"],
-          "state": ["Planned", "Held", "Canceled"]
+          "status": "За месяц",
+          "img": "visa.png",
+          "time": "10.03.2021",
+          "title": "derft",
+          "price": "+ 560,00"
         },
         {
           "id": 5,
-          "status": "normal",
-          "name": "Natalia Codrean",
-          "userImg": "doc5.png",
-          "profession": "Oncologist",
-          "seniorityCount": 15,
-          "seniority": "20 years of experience",
-          "date": "Saturday 20 April",
-          "time": "16:00",
-          "contacts": ["Video communication", "Chat"],
-          "state": ["Planned", "Held"]
+          "status": "За сегодня",
+          "img": "visa.png",
+          "time": "10.03.2021",
+          "title": "Пополнение",
+          "price": "+ 560,00"
         },
         {
           "id": 6,
-          "status": "normal",
-          "name": "Zinaida Sarbu",
-          "userImg": "doc6.png",
-          "profession": "Obstetrician-gynecologist",
-          "seniorityCount": 7,
-          "seniority": "33 years of experience",
-          "date": "Thursday 25 April",
-          "time": "16:00",
-          "contacts": ["Video communication", "Chat"],
-          "state": ["Planned", "Held"]
-        },
-        {
-          "id": 7,
-          "status": "normal",
-          "name": "Irina Triboi",
-          "userImg": "doc7.png",
-          "profession": "Oncologist",
-          "seniorityCount": 5,
-          "seniority": "7 years of experience",
-          "date": "Tuesday 16 April",
-          "time": "16:00",
-          "contacts": ["Video communication", "Chat"],
-          "state": ["Planned", "Held"]
-        },
-        {
-          "id": 8,
-          "status": "normal",
-          "name": "Angela Selivanov",
-          "userImg": "doc8.png",
-          "profession": "Obstetrician-gynecologist",
-          "seniorityCount": 9,
-          "seniority": "5 years of experience",
-          "date": "12 April",
-          "time": "16:00",
-          "contacts": ["Video communication", "Chat"],
-          "state": ["Planned", "Held"]
-        },
-        {
-          "id": 9,
-          "status": "unavailable ",
-          "name": "Lyudmila Suratsel",
-          "userImg": "doc9.png",
-          "profession": "Endocrinologist",
-          "seniorityCount": 10,
-          "seniority": "8 years of experience",
-          "date": "18 April",
-          "time": "16:00",
-          "contacts": ["Video communication", "Chat"],
-          "state": ["Planned", "Held"]
-        },
-        {
-          "id": 10,
-          "status": "unavailable ",
-          "name": "Elena Vasilieva",
-          "userImg": "doc10.png",
-          "profession": "Pneumologist",
-          "seniorityCount": 8,
-          "seniority": "18 years of experience",
-          "date": "03 March",
-          "time": "16:00",
-          "contacts": ["Video communication", "Chat"],
-          "state": ["Planned", "Held"]
+          "status": "За все время",
+          "img": "Mask2.png",
+          "time": "10.03.2021",
+          "title": "Оплата за консультацию",
+          "price": "+ 560,00"
         }
-      ]
+    ]
   }
     
 }

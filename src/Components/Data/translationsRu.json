@@ -42,137 +42,78 @@
       "past": "Прошедшие",
       "canceled": "Отмененные"
     },
-    "users": [
-    {
-        "id": 1,
-        "status": "active",
-        "name": "Ольга Никитина",
-        "userImg": "doc1.png",
-        "profession": "Педиатр",
-        "seniorityCount": 1,
-        "seniority": "Стаж 2 лет",
-        "date": "03 Марта 2021 ",
-        "time": "16:00",
-        "contacts": ["Видео связь", "Чат"],
-        "state": ["Запланировано", "Состоялась"]
+    "users": {
+         "status": "active",
+         "name": "Ольга Никитина",
+         "userImg": "doc1.png",
+         "profession": "Педиатр",
+         "seniorityCount": 1,
+         "seniority": " лет Стаж",
+         "date": "03 Марта 2021 ",
+         "time": "16:00",
+         "contacts": {
+            "chat_one": "Видео связь",
+            "chat_one1":"Чат",
+            "state": ["Запланировано", "Состоялась"]
+        }
       },
-      { 
+        "balanceTitles": "Баланс",
+        "balancePraices": "1 058,68",
+        "balanceButtons": "Пополнить счет",
+         "balancTitles": "История платежей",
+         "balancData1": "За сегодня",
+         "balancData2": "За месяц",
+         "balancData3": "За все время",
+
+      "balancePraice": [
+        {
+          "id": 1,
+          "status": "За сегодня",
+          "img": "visa1.png",
+          "time": "10.03.2021",
+          "title": "Пополнение",
+          "price": "+ 560,00"
+        },
+        {
         "id": 2,
-        "status": "active",
-        "name": "Олимпия Герман",
-        "userImg": "doc2.png",
-        "profession": "Пневмолог",
-        "seniorityCount": 2,
-        "seniority": "Стаж 20 лет",
-        "date": "среда 17 апреля",
-        "time": "12:00",
-        "contacts": ["Видео связь", "Чат"],
-        "state": ["Запланировано", "Состоялась"]
-      },
-      {
-        "id": 3,
-        "status": "active",
-        "name": "Надежда Коробчан",
-        "userImg": "doc3.jpg",
-        "profession": "Онколог",
-        "seniorityCount": 3,
-        "seniority": "Стаж 20 лет",
-        "date": "суббота 20 апреля",
-        "time": "14:00",
-        "contacts": ["Видео связь", "Чат"],
-        "state": ["Запланировано", "Состоялась"]
-      },
-      {
-        "id": 4,
-        "status": "active",
-        "name": "Андриан Кириак",
-        "userImg": "doc4.jpg",
-        "profession": "Эндокринолог",
-        "seniorityCount": 4,
-        "seniority": "Стаж 19 лет",
-        "date": "вторник 16 апреля",
-        "time": "13:00",
-        "contacts": ["Видео связь", "Чат"],
-        "state": ["Запланировано", "Состоялась","Отмененные"]
-      },
-      {
-        "id": 5,
-        "status": "normal",
-        "name": "Наталья Кодрян",
-        "userImg": "doc5.png",
-        "profession": "Онколог",
-        "seniorityCount": 6,
-        "seniority": "Стаж 20 лет",
-        "date": "суббота 20 апреля",
-        "time": "14:00",
-        "contacts": ["Видео связь", "Чат"],
-        "state": ["Запланировано", "Состоялась"]
-      },
-      {
-        "id": 6,
-        "status": "normal",
-        "name": "Зинаида Сарбу",
-        "userImg": "doc6.png",
-        "profession": "Акушер-гинеколог",
-        "seniorityCount": 7,
-        "seniority": "Стаж 33 лет",
-        "date": "четверг 25 апреля",
-        "time": "16:00",
-        "contacts": ["Видео связь", "Чат"],
-        "state": ["Запланировано", "Состоялась"]
-      },
-      {
-        "id": 7,
-        "status": "normal",
-        "name": "Ирина Трибой",
-        "userImg": "doc7.png",
-        "profession": "Педиатр",
-        "seniorityCount": 8,
-        "seniority": "Стаж 7 лет",
-        "date": "вторник 16 апреля",
-        "time": "16:00",
-        "contacts": ["Видео связь", "Чат"],
-        "state": ["Запланировано", "Состоялась"]
-      },
-      {
-        "id": 8,
-        "status": "normal",
-        "name": "Анжела Селиванов",
-        "userImg": "doc8.png",
-        "profession": "Педиатр",
-        "seniorityCount": 9,
-        "seniority": "Стаж 12 лет",
-        "date": "04 вторник 2021 ",
-        "time": "16:00",
-        "contacts": ["Видео связь", "Чат"],
-        "state": ["Запланировано", "Состоялась"]
-      },
-      {
-        "id": 9,
-        "status": "unavailable ",
-        "name": "Людмила Сурацель",
-        "userImg": "doc9.png",
-        "profession": "Педиатр",
-        "seniorityCount": 10,
-        "seniority": "Стаж 10 лет",
-        "date": "05 вторник",
-        "time": "14:00",
-        "contacts": ["Видео связь", "Чат"],
-        "state": ["Запланировано", "Состоялась"]
-      },
-      {
-        "id": 10,
-        "status": "unavailable ",
-        "name": "Елена Васильева",
-        "userImg": "doc10.png",
-        "profession": "Педиатр",
-        "seniorityCount": 0,
-        "seniority": "Стаж 18 лет",
-        "date": "03 Марта",
-        "time": "16:00",
-        "contacts": ["Видео связь", "Чат"],
-        "state": ["Запланировано", "Состоялась"]
-      }
+        "status": "За месяц",
+        "img": "Mask1.png",
+        "time": "10.03.2021",
+        "title": "Оплата за консультацию",
+        "price": "- 900,00"
+        },
+        {
+          "id": 3,
+          "status": "За сегодня",
+          "img": "Mask2.png",
+          "time": "10.03.2021",
+          "title": "Оплата за консультацию",
+          "price": "- 900,00"
+        },
+        {
+          "id": 4,
+          "status": "За месяц",
+          "img": "visa1.png",
+          "time": "10.03.2021",
+          "title": "Пополнение",
+          "price": "+ 560,00"
+        },
+        {
+          "id": 5,
+          "status": "За месяц",
+          "img": "visa1.png",
+          "time": "10.03.2021",
+          "title": "Пополнение",
+          "price": "+ 560,00"
+        },
+        {
+          "id": 6,
+          "status": "За все время",
+          "img": "Mask2.png",
+          "time": "10.03.2021",
+          "title": "Оплата за консультацию",
+          "price": "+ 560,00"
+        }
     ]
   }
 }
