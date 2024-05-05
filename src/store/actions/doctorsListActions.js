@@ -5,6 +5,7 @@ function get(category) {
     type: DoctorsListType.REQUEST,
     payload:category ,
   };
+  
 }
 
 function success(list) {
