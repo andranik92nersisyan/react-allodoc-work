@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import "./section.css";
+import "./Section.css";
 function Doctors(props) {
   const { t } = useTranslation();
   return (
@@ -20,7 +20,8 @@ function Doctors(props) {
       </div>
       <div className="block_btn">
         {/* <button className="section_btn_1">{user.state[0]}</button> */}
-        <Link className="section_btn_2" to={`/user/${props.id}`}>
+        <Link className="section_btn_2" to="/user">
+        {/* ${props.id} */}
           {t("item.viewRecord")}
         </Link>
         <button className="section_btn_3">{t("item.viewResolution")}</button>

@@ -1,0 +1,11 @@
+.link_found{
+    display: inline-block;
+    transform: translate(73rem, -17.45rem);
+    color: black;
+    font-size: 22px;
+    font-weight: 900;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 5px 5px;
+    box-shadow: 2px 0px 0px 10px rgba(85, 85, 84, 0.819);
+}

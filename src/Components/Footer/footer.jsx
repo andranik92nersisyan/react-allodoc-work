@@ -1,5 +1,5 @@
 import React from "react";
-import "../Headers/header.css";
+import "../headers/Header.css";
 import appStoreBadge from "../../Images/appStoreBadge.png";
 import facebook from "../../Images/facebook.png";
 import footerLgo from "../../Images/footerLgo.png";
@@ -24,8 +24,7 @@ export default function Footer() {
                 Онлай- консульации специалистов врачей, то что предлагает данный
                 сервис.
                 <br />
-                <br />
-                В нашем веб и мобильном приложении вы найдете врачей
+                <br />В нашем веб и мобильном приложении вы найдете врачей
                 экспертов, которые окажут вам персонализированную помощь онлайн
                 24/7
               </p>
@@ -88,7 +87,9 @@ export default function Footer() {
                 <li>
                   <div className="footer_link-icons">
                     <img src={location} alt="creditcard" />
-                    <p className="footer_link_text">г. Москва. ул, Ленина 54, офис 51</p>
+                    <p className="footer_link_text">
+                      г. Москва. ул, Ленина 54, офис 51
+                    </p>
                   </div>
                 </li>
                 <li>

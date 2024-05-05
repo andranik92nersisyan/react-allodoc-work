@@ -1,4 +1,4 @@
-import "../Headers/header.css";
+import "../headers/Header.css";
 import mainimages from "../../Images/docimg.PNG";
 import { useTranslation } from "react-i18next";
 function Main() {

@@ -1,7 +1,8 @@
 import logo from "../../Images/logo.png";
-import MenuItem from "./menu-item";
+import MenuItem from "./MenuItem";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import i18n from "../../Service/i18next";
+import i18n from "../../service/i18next";
 
 function Menu() {
   const { t } = useTranslation();
@@ -18,7 +19,9 @@ function Menu() {
           </div>
           <div className="header-fx">
             <div className="logo">
-              <img src={logo} alt="logo" />
+              <Link className="home" to="/home">
+                <img src={logo} alt="logo" />
+              </Link>
             </div>
           </div>
           <MenuItem menuItems={t("menu")} />

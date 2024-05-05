@@ -1,16 +1,15 @@
-import Main from "../../Components/Main/main";
-import Article from "../../Components/Article/aricle";
-import Section from "../../Components/Sections/section";
+import Main from "../../components/main/Main";
+import Article from "../../components/article/Aricle";
+import DoctorsStatus from "../../components/sections/DoctorStatus";
 
 function Home() {
   return (
     <div className="wrapper">
       <Main />
-      <Article/>
-      <Section />
+      <Article />
+      <DoctorsStatus />
     </div>
   );
 }
 
 export default Home;
-

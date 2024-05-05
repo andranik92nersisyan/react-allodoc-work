@@ -1,16 +1,20 @@
-// SectionDoctrs.js
-import React, { useMemo } from "react";
-import "./section.css";
+import { useMemo } from "react";
+import "./DoctorStatus.jsx";
 import calendar from "../../Images/calendar.png";
 import clock from "../../Images/clock.png";
 import videocamera from "../../Images/video-camera.png";
 import { useTranslation } from "react-i18next";
-import Doctors from "./doctrs";
+import Doctors from "./Doctors.jsx";
+import { useSelector } from "react-redux";
+import { DoctorsListSelectors } from "../../store/selectors";
+function DoctorsList() {
 
-function SectionDoctrs(props) {
   const { t } = useTranslation();
+  const { list,loading,  error } = useSelector(DoctorsListSelectors.doctorsList);
   const renderUsers = useMemo(() => {
-    return props.section.map((item, index) => {
+    console.log(list,"list");
+ 
+    return list.map((item, index) => {
       return (
         <div className="section-block" key={index}>
           <div className="section_fl">
@@ -29,8 +33,8 @@ function SectionDoctrs(props) {
         </div>
       );
     });
-  }, [props]);
+  }, [list]);
 
   return renderUsers;
 }
-export default SectionDoctrs;
+export default DoctorsList;

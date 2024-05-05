@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import BalanceCard from "./balanceCard";
-import balanceDataRu from "../Data/translationsRu.json";
-import balanceDataEn from "../Data/translationsEn.json";
-import BalnceBtn from "./balanceBtn";
+import BalanceCard from "./BalanceCard";
+import balanceDataRu from "../data/translationsRu.json";
+import balanceDataEn from "../data/translationsEn.json";
+import BalnceBtn from "./BalanceBtn";
 function BalanceTaitel() {
   const { t, i18n } = useTranslation();
   const data = i18n.language === "ru" ? balanceDataRu : balanceDataEn;

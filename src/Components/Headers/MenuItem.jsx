@@ -1,4 +1,4 @@
-import "./header.css";
+import "./Header.css";
 import notifications from "../../Images/notifications.png";
 import React, { useCallback, useEffect, useState } from "react";
 import vector from "../../Images/vector.png";
@@ -28,7 +28,7 @@ const MenuItem = () => {
       setIsOpen(false);
     }
   }, [isOpen])
-
+  
   return (
     <div className="menu-item-fl">
       <nav className="navbar">

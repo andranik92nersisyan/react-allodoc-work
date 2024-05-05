@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./style.css";
-import "../../Components/Headers/header.css";
-import BalanceTaitel from "../../Components/Balance/balanceTaitle";
+import "../../components/headers/Header.css";
+import BalanceTaitel from "../../components/balance/BalanceTaitle";
 import { useTranslation } from "react-i18next";
 
 function Balance() {

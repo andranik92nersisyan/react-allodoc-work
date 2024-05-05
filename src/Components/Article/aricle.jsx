@@ -1,5 +1,5 @@
 import objects from "../../Images/objects.png";
-import Signup from "../Article/articlblock";
+import Signup from "./Articlblock";
 function Article() {
   return (
     <article>
@@ -9,7 +9,7 @@ function Article() {
             <div className="article-img">
               <img src={objects} alt="objects-img" />
             </div>
-            <Signup/>
+            <Signup />
           </div>
         </div>
       </div>
