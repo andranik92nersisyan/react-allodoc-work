@@ -20,11 +20,11 @@ function Doctors(props) {
       </div>
       <div className="block_btn">
         {/* <button className="section_btn_1">{user.state[0]}</button> */}
-        <Link className="section_btn_2" to="/user">
+        <Link className="section_btn_2" to={`/doctorsProfils/${props.item.id}`}>
         {/* ${props.id} */}
-          {t("item.viewRecord")}
+          {t("records.viewRecord")}
         </Link>
-        <button className="section_btn_3">{t("item.viewResolution")}</button>
+        <button className="section_btn_3">{t("records.viewResolution")}</button>
       </div>
     </>
   );

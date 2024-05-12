@@ -1,3 +1,17 @@
-.mainDiv {
-    /* padding-top: 100px; */
+/* .mainDiv {
+    padding-top: 500px;
+} */
+.doctors_profile{
+    
+}
+.doctors_prof_fl{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #56CCF2;
+    width: 1920px;
+    height: 316px;
+    top: 109px;
+    gap: 0px;
+    opacity: 0px;
 }

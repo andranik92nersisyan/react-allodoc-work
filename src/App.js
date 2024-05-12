@@ -17,7 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/balance" element={<Balance />} />
-        <Route path="/user" element={<DoctorsProfile />} />
+        <Route path="/doctorsProfils/:id" element={<DoctorsProfile />} />
         <Route path="*" element={<NodeFound/>} />
       </Routes>
       <Footer />

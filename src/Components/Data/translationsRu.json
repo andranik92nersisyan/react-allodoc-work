@@ -40,7 +40,18 @@
       "myNotes": "мои записи",
       "upcoming": "Предстоящие",
       "past": "Прошедшие",
-      "canceled": "Отмененные"
+      "canceled": "Отмененные",
+      "viewRecord": "Посмотреть запись",
+      "viewResolution": "Посмотреть постановление",
+      "additionally": "Дополнительно",
+      "specializes": "Специализируется на лечении",
+      "education": "Образование",
+      "nearestentry": "Ближайшая запись",
+      "minutes": "минут",
+      "consultation": "/ консультация",
+      "yearsExperience": "Стаж  лет",
+      "doctorsProfile":"Профиль врача",
+      "doctorsTx": "Врачи"
     },
     "users": {
          "status": "active",
